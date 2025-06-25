@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Encoding/Decoding Demo</title>
+    <link rel="stylesheet" href="Stlyes.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Encoding-Decoding Translator</h1>
+        
+        <div class="input-section">
+            <label for="inputString">Input String:</label>
+            <input type="text" id="inputString" placeholder="Enter your text here">
+        </div>
+
+        <div class="select-section">
+            <label for="baseSelect">Select Encoding Scheme:</label>
+            <select id="baseSelect">
+                <option value="base32">Base32</option>
+                <option value="base64">Base64</option>
+                <option value="base85">Base85</option>
+            </select>
+        </div>
+
+        <div class="buttons">
+            <button id="encodeButton">Encode</button>
+            <button id="decodeButton" style="display:none;"> Decode </button>
+        </div>
+
+        <div class="result-section">
+            <h2>Result:</h2>
+            <div id="result"></div>
+        </div>
+
+        <div class="steps-section">
+            <h2>Step-by-Step Process:</h2>
+            <div id="steps"></div>
+        </div>
+    </div>
+
+    <script src="Operations.js"></script>
+</body>
+</html>
